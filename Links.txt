@@ -1,3 +1,4 @@
 Wiki : https://github.com/DiamondCoder1000/PlatinumOS/wiki
 Project : https://github.com/DiamondCoder1000/PlatinumOS/projects/1?fullscreen=true
 Code : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/v1.2.2.py
+License : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/LICENSE
