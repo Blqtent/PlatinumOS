@@ -1,4 +1,4 @@
-ver = '1.2.1'
+ver = '1.2.2'
 cpu = 40
 import time
 import math
