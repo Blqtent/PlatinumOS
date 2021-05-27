@@ -156,9 +156,9 @@ while True:
              else:
               print("Invalid Input")
     elif app == '4':
-       print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
+       print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US?usp=sharing')
     elif app == '5':
-        print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
+        print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z?usp=sharing')
   elif x == 'version':
     print(ver)
   elif x == 'sh version':
