@@ -5,4 +5,4 @@ current version: 1.2.1(full release)
 
 UI: text
 
-i guess that's all
+goto https://github.com/DiamondCoder1000/PlatinumOS/wiki for help with installation
