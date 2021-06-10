@@ -4,7 +4,7 @@ cpu = 40
 import time
 import math
 #platinum data END
-print('running BIOS sequence[exec /BIOS]...')
+print('executing BIOS sequence[exec /BIOS]...')
 time.sleep(40/20)
 print('(DONE)')
 def WikipediaSearch():
@@ -211,3 +211,7 @@ while True:
     time.sleep(3)
     print('done')
     break
+  elif i = "4":
+    print("Goto https://colab.research.google.com/drive/11Rmkcml9qsNVe1W8alK2Q56AEkVxNyVo?usp=sharing")
+  else:
+    print("ERROR: THAT IS NOT A OS AVAILIBLE")
