@@ -1,5 +1,5 @@
 #platinum data START
-ver = '1.2.2'
+ver = '1.3.1'
 cpu = 40
 import time
 import math
@@ -53,7 +53,7 @@ def PlatinumOS():
   print('login sucessful')
   print('Welcome to PlatinumOS', ver)
   print('Exiting...')
-  time.sleep(cpu/20)
+  time.sleep(2)
   print('Platinum shell 1.7')
   print('type "?" for help')
   while True:
@@ -92,91 +92,91 @@ def PlatinumOS():
           5: Simple Programming Language(SPL)
           6: Exit    
         ''')
-      if app == '6':
-        break
-      elif app == '1':
-        print('''
-    
-        ''' * 50)
-        print('welcome to Micro Text, a simple text editor \n type "sys.exit" to exit this app \n (c)2021')
-        while True:
-          y = input()
-          if y == 'sys.exit':
-            print('thanks for using Micro Text\n see you next time!')
-            break
-      elif app == '2':
+        if app == '6':
+          break
+        elif app == '1':
           print('''
     
           ''' * 50)
-          print('welcome to Platinum Browser, a simple browser\n type "sys.exit" to exit this app \n (c)2021')
+          print('welcome to Micro Text, a simple text editor \n type "sys.exit" to exit this app \n (c)2021')
           while True:
-            a = input('search:')
-            if a == 'sys.exit':
-              print('thanks for using Platinum Browser!\n see you next time')
+            y = input()
+            if y == 'sys.exit':
+              print('thanks for using Micro Text\n see you next time!')
               break
-            else:
-              print('goto: https://google.com/search?q='+a)
-      elif app == '3':
-          print('''
-      
-          ''' * 50)
-          print('welcome to Calculator, a simple calculator\n type "sys.exit" to exit this app \n (c)2021')
-          # Program make a simple calculator
+        elif app == '2':
+            print('''
 
-          # This function adds two numbers
-          def add(x, y):
-             return x + y
+            ''' * 50)
+            print('welcome to Platinum Browser, a simple browser\n type "sys.exit" to exit this app \n (c)2021')
+            while True:
+              a = input('search:')
+              if a == 'sys.exit':
+                print('thanks for using Platinum Browser!\n see you next time')
+                break
+              else:
+                print('goto: https://google.com/search?q='+a)
+        elif app == '3':
+            print('''
+      
+            ''' * 50)
+            print('welcome to Calculator, a simple calculator\n type "sys.exit" to exit this app \n (c)2021')
+            # Program make a simple calculator
+
+            # This function adds two numbers
+            def add(x, y):
+              return x + y
 
           # This function subtracts two numbers
-          def subtract(x, y):
-             return x - y
+            def subtract(x, y):
+              return x - y
 
           # This function multiplies two numbers
-          def multiply(x, y):
-            return x * y
+            def multiply(x, y):
+              return x * y
 
           # This function divides two numbers
-          def divide(x, y):
-            return x / y
+            def divide(x, y):
+              return x / y
 
 
-          print("Select operation.")
-          print("1.Add")
-          print("2.Subtract")
-          print("3.Multiply")
-          print("4.Divide")
-          print("5.Exit")
-          while True:
-            # Take input from the user
-            choice = input("Enter choice(1/2/3/4/5): ")
+            print("Select operation.")
+            print("1.Add")
+            print("2.Subtract")
+            print("3.Multiply")
+            print("4.Divide")
+            print("5.Exit")
+            while True:
+              # Take input from the user
+              choice = input("Enter choice(1/2/3/4/5): ")
 
-            # Check if choice is one of the four options
-            if choice in ('1', '2', '3', '4','5'):
-             if choice == '5':
-               break
-             else: 
-              num1 = float(input("Enter first number: "))
-              num2 = float(input("Enter second number: "))
+              # Check if choice is one of the four options
+              if choice in ('1', '2', '3', '4','5'):
+                if choice == '5':
+                  break
+                else: 
+                  num1 = float(input("Enter first number: "))
+                  num2 = float(input("Enter second number: "))
 
-             if choice == '1':
-                 print(num1, "+", num2, "=", add(num1, num2))
+                if choice == '1':
+                  print(num1, "+", num2, "=", add(num1, num2))
 
-             elif choice == '2':
-                 print(num1, "-", num2, "=", subtract(num1, num2))
+                elif choice == '2':
+                  print(num1, "-", num2, "=", subtract(num1, num2))
 
-             elif choice == '3':
-                 print(num1, "*", num2, "=", multiply(num1, num2))
+                elif choice == '3':
+                  print(num1, "*", num2, "=", multiply(num1, num2))
 
-             elif choice == '4':
-                 print(num1, "/", num2, "=", divide(num1, num2))
-             elif choice == '6':
-               break
-             else:
-              print("Invalid Input")
-      elif app == '4':
-        print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
-      elif app == '5':
-        print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
+                elif choice == '4':
+                  print(num1, "/", num2, "=", divide(num1, num2))
+                elif choice == '6':
+                  break
+                else:
+                  print("Invalid Input")
+        elif app == '4':
+          print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
+        elif app == '5':
+          print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
       else:
         print('that\'s not a app')
     elif x == 'version':
