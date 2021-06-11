@@ -199,19 +199,20 @@ while True:
   print('''
   1. Wikipedia search
   2. PlatinumOS
-  3. shutdown VM
+  3. BPL programming
+  4. shutdown VM
   ''')
   i = input("OS: ")
   if i == "2":
     PlatinumOS()
   elif i == "1":
     WikipediaSearch()
-  elif i == "3":
+  elif i == "4":
     print('Shutting down BIOS...')
     time.sleep(3)
     print('done')
     break
-  elif i = "4":
+  elif i == "3":
     print("Goto https://colab.research.google.com/drive/11Rmkcml9qsNVe1W8alK2Q56AEkVxNyVo?usp=sharing")
   else:
     print("ERROR: THAT IS NOT A OS AVAILIBLE")
