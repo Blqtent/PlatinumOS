@@ -60,7 +60,7 @@ def PlatinumOS():
     x = input('> ')
     if x == '?':
       print('''
-    Platinum Shell 1.7 (c) 2021
+    Platinum Shell 1.8 (c) 2021
     
     Type "menu" to open the app menu.
     
@@ -92,9 +92,10 @@ def PlatinumOS():
           3: Calculator
           4: Arithmetic Programming Language(APL)
           5: Simple Programming Language(SPL)
-          6: Exit    
+          6: Timer
+          7: Exit    
         ''')
-        if app == '6':
+        if app == '7':
           break
         elif app == '1':
           print('''
@@ -108,7 +109,6 @@ def PlatinumOS():
               break
         elif app == '2':
             print('''
-
             ''' * 50)
             print('welcome to Platinum Browser, a simple browser\n type "sys.exit" to exit this app \n (c)2021')
             while True:
@@ -179,6 +179,40 @@ def PlatinumOS():
           print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
         elif app == '5':
           print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
+        elif app == '6':
+          from time import sleep
+          m = 0
+          print("""**************************
+          Welcome To FASTIMER®
+          **************************""")
+          while True:
+            try:
+              countdown = int(input("How many seconds:  "))
+              break
+            except ValueError:
+              print("ERROR, TRY AGAIN")
+          original = countdown
+          while countdown >= 60:
+            countdown -= 60
+            m += 1
+          for i in range (original,0,-1):
+            if m < 0:
+              break
+            for i in range(countdown,-2,-1):
+              if i % 60 == 0:
+                m-=1
+              if i == 0:
+                break
+              print(m," minutes and ",i," seconds")
+              sleep(1)
+            if m < 0:
+              break
+            for j in range(59,-1,-1):
+              if j % 60 == 0:
+                m-=1          
+              print(m," minutes and ",j," seconds")
+              sleep(1)
+          print("TIMER FINISHED")
       else:
         print('that\'s not a app')
     elif x == 'version':
@@ -203,7 +237,7 @@ def PlatinumOS():
       print('GNU General Public License v3.0')
     elif x == 'open help' or x == 'open help.txt':
       print('''
-    Platinum Shell 1.7 (c) 2021
+    Platinum Shell 1.8 (c) 2021
     
     Type "menu" to open the app menu.
     
@@ -215,7 +249,6 @@ def PlatinumOS():
     ls --- lists directories
     open --- opens files
       ''')
-    
     else:
       print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon')
 while True:
