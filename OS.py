@@ -4,7 +4,7 @@ cpu = 40
 import time
 import math
 #platinum data END
-print('executing BIOS sequence[exec /BIOS]...')
+print('executing BIOS sequence...')
 time.sleep(40/20)
 print('(DONE)')
 def WikipediaSearch():
@@ -69,6 +69,8 @@ def PlatinumOS():
     sh version --- prints the shell version
     ? --- to get here
     exit --- exits OS
+    ls --- lists directories
+    open --- opens files
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -187,11 +189,33 @@ def PlatinumOS():
       print('''
     
       ''' * 50)
-    elif x == 'files':
+    elif x == 'ls':
       print('''
-      boot
-      kernel
+      credits.txt
+      liscense.txt
+      help.txt
       ''')
+    elif x == 'open credits' or x == 'open credits.txt':
+      print('''
+      DiamondCoder1000 - creator and tester
+      ''')
+    elif x == 'open license' or x == 'open license.txt':
+      print('GNU General Public License v3.0')
+    elif x == 'open help' or x == 'open help.txt':
+      print('''
+    Platinum Shell 1.7 (c) 2021
+    
+    Type "menu" to open the app menu.
+    
+    COMMANDS:
+    version --- prints the OS version
+    sh version --- prints the shell version
+    ? --- to get here
+    exit --- exits OS
+    ls --- lists directories
+    open --- opens files
+      ''')
+    
     else:
       print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon')
 while True:
@@ -200,7 +224,7 @@ while True:
   1. Wikipedia search
   2. PlatinumOS
   3. BPL programming
-  4. shutdown VM
+  4. shutdown
   ''')
   i = input("OS: ")
   if i == "2":
