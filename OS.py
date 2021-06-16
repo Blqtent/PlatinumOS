@@ -64,7 +64,7 @@ def PlatinumOS():
   print('Platinum shell 1.7')
   print('type "?" for help')
   while True:
-    x = input('> ')
+    x = input('admin> ')
     if x == '?':
       print('''
     Platinum Shell 1.8 (c) 2021
@@ -256,11 +256,11 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
-      ''')
+    ''')
     
     
     else:
-      print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon')
+      print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon\n')
 while True:
   print('There are 3 systems installed. Which one do you wanna run? Type the number.')
   print('''
