@@ -4,6 +4,7 @@ cpu = 40
 import time
 import math
 #platinum data END
+print('PlatinumBIOS (c) June 2021')
 print('executing BIOS sequence...')
 time.sleep(2)
 print('locating bootloader...')
@@ -22,6 +23,7 @@ def WikipediaSearch():
     else:
       print("goto https://en.wikipedia.org/wiki/"+y)
 def PlatinumOS():
+  print('')
   print('Booting PlatinumOS', ver,'...')
   print('cpu speed:', cpu, 'MHz')
   print('locating kernel...')
@@ -31,7 +33,7 @@ def PlatinumOS():
   print('jumping to kernel...')
   time.sleep(cpu/40)
   print('executing login sequence...')
-  time.sleep(cpu/80)
+  time.sleep(cpu/20)
   print('Platinum login:\n')
   # login sequence {
   class Login:
