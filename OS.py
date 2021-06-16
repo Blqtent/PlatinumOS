@@ -24,9 +24,9 @@ def WikipediaSearch():
 def PlatinumOS():
   print('Booting PlatinumOS', ver,'...')
   print('cpu speed:', cpu, 'MHz')
-  print('locating kernel')
-
-
+  print('locating kernel...')
+  print('')
+  print('')
   time.sleep(cpu/20)
   print('jumping to kernel...')
   time.sleep(cpu/40)
@@ -76,6 +76,7 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
+    reboot --- reboots the system
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -254,10 +255,12 @@ def PlatinumOS():
     ls --- lists directories
     open --- opens files
       ''')
+    
+    
     else:
       print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon')
 while True:
-  print('There are 2 systems installed. Which one do you wanna run? Type the number.')
+  print('There are 3 systems installed. Which one do you wanna run? Type the number.')
   print('''
   1. Wikipedia search
   2. PlatinumOS
