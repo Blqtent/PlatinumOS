@@ -76,7 +76,7 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
-    reboot --- reboots the system
+    reboot --- reboots the system(WIP)
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
