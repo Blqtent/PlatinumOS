@@ -260,7 +260,7 @@ def PlatinumOS():
     
     
     else:
-      print('that is not a command added to the Platinum Shell 1.7\nUpdates will come soon\n')
+      print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
   print('There are 3 systems installed. Which one do you wanna run? Type the number.')
   print('''
