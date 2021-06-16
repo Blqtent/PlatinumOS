@@ -5,7 +5,9 @@ import time
 import math
 #platinum data END
 print('executing BIOS sequence...')
-time.sleep(40/20)
+time.sleep(2)
+print('locating bootloader...')
+time.sleep(3)
 print('(DONE)')
 def WikipediaSearch():
   print("Booting search...")
@@ -22,6 +24,9 @@ def WikipediaSearch():
 def PlatinumOS():
   print('Booting PlatinumOS', ver,'...')
   print('cpu speed:', cpu, 'MHz')
+  print('locating kernel')
+
+
   time.sleep(cpu/20)
   print('jumping to kernel...')
   time.sleep(cpu/40)
