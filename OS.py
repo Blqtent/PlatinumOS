@@ -226,7 +226,7 @@ def PlatinumOS():
     elif x == 'version':
       print(ver)
     elif x == 'sh version':
-      print('1.7')
+      print('1.8')
     elif x == 'cls':
       print('''
     
