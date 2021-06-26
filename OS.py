@@ -23,6 +23,8 @@ def WikipediaSearch():
     else:
       print("goto https://en.wikipedia.org/wiki/"+y)
 def PlatinumOS():
+  G = False
+  H = True
   print('')
   print('Booting PlatinumOS', ver,'...')
   print('cpu speed:', cpu, 'MHz')
@@ -258,7 +260,39 @@ def PlatinumOS():
     open --- opens files
     ''')
     
+       
+     elif x == 'pip install Guessing_Game':
+      print('getting packages...')
+      print('000%')
+      ti.sleep(1)
+      print('025%')
+      ti.sleep(1)
+      print('075%')
+      ti.sleep(3)
+      print('100%: DONE: GUESSING_GAME IS INSTALLED. TYPE "open guessing game" TO OPEN.')
+      G = True
+
+    elif x == 'pip install Hangman':
+      print('getting packages...')
+      print('000%')
+      ti.sleep(1)
+      print('025%')
+      ti.sleep(1)
+      print('075%')
+      ti.sleep(3)
+      print('100%: DONE: HANMAN IS INSTALLED. TYPE "open hangman" TO OPEN.')
+      H = True
+    elif x == 'hangman':
+      if H == True:
+        hangman_hangman()
+      else: 
+        print('ERROR<hangman is not installed>')
     
+    elif x == 'guessing game':
+      if G == True:
+        guessing_game()
+      else:
+        print('ERROR<guessing game is not installed>')
     else:
       print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
