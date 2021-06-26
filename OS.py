@@ -66,7 +66,7 @@ def PlatinumOS():
   print('Platinum shell 1.7')
   print('type "?" for help')
   while True:
-    x = input('admin> ')
+    x = input('C:/>')
     if x == '?':
       print('''
     Platinum Shell 1.8 (c) 2021
