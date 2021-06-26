@@ -1,5 +1,5 @@
 #platinum data START
-ver = 'ZERO'
+ver = '2.0.3'
 cpu = 40
 import time
 import math
@@ -293,6 +293,13 @@ def PlatinumOS():
         guessing_game()
       else:
         print('ERROR<guessing game is not installed>')
+    elif x == 'about':
+      print("""
+      version: 2.1.0
+      (c) 2021 all rights reserved
+      Diamondcoder1000
+      May 26, 2021
+      """)
     else:
       print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
