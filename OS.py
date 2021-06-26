@@ -1,5 +1,5 @@
 #platinum data START
-ver = '2.0.3'
+ver = '2.1.0'
 cpu = 40
 import time
 import math
