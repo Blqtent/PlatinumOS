@@ -3,7 +3,7 @@ A OS in python(trust me it's better than PyOS)
 # Info
 current version: v2.1.0
 
-current pre release: NaN
+current pre release: 2.1.1 pre-1
 
 UI: text
 
