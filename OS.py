@@ -1,9 +1,8 @@
-#platinum data START
+#start of the os :)
 ver = '2.1.0'
 cpu = 40
 import time
 import math
-#platinum data END
 print('PlatinumBIOS (c) June 2021')
 print('executing BIOS sequence...')
 time.sleep(2)
@@ -66,7 +65,7 @@ def PlatinumOS():
   print('Platinum shell 1.7')
   print('type "?" for help')
   while True:
-    x = input('C:/>')
+    x = input('>')
     if x == '?':
       print('''
     Platinum Shell 1.8 (c) 2021
