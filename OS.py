@@ -78,6 +78,7 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
+    apps --- lists all the apps
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -240,6 +241,7 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
+    apps --- list all the apps
     ''')
     
        
