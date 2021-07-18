@@ -71,7 +71,7 @@ def PlatinumOS():
       print('''
     Platinum Shell 1.9 (c) 2021
     
-    Type the name of the apps to open the app.
+    Type the name of the app to open the app.
     
     COMMANDS:
     version --- prints the OS version
@@ -230,9 +230,10 @@ def PlatinumOS():
       print('GNU General Public License v3.0')
     elif x == 'open help' or x == 'open help.txt':
       print('''
+    
     Platinum Shell 1.9 (c) 2021
     
-    Type the name of the apps to open the app.
+    Type the name of the app to open the app.
     
     COMMANDS:
     version --- prints the OS version
