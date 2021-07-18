@@ -4,11 +4,10 @@ cpu = 40
 import time
 import math
 print('PlatinumBIOS (c) July 2021')
-print('executing BIOS sequence...')
 time.sleep(2)
 print('locating bootloader...')
 time.sleep(3)
-print('(DONE)')
+print('done')
 def WikipediaSearch():
   print("Booting search...")
   time.sleep(cpu/10)
@@ -170,9 +169,9 @@ def PlatinumOS():
                 else:
                   print("Invalid Input")
     elif x == 'APL.app':
-          print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
+          print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US?usp=sharing')
     elif x == 'SPL.app':
-          print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
+          print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z?usp=sharing')
     elif x == 'Time.app':
           from time import sleep
           m = 0
@@ -289,7 +288,7 @@ def PlatinumOS():
     else:
       print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
-  print('There are 3 systems installed. Which one do you wanna run? Type the number.')
+  print('There are 3 operating systems installed. Which one do you want to run? Type the number.')
   print('''
   1. Wikipedia search
   2. PlatinumOS
