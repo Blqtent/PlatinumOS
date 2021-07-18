@@ -1,5 +1,5 @@
 #start of the os :)
-ver = '2.1.2'
+ver = '2.1.3'
 cpu = 40
 import time
 import math
