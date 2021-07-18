@@ -7,4 +7,4 @@ Versions : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/version_hist
 Credits : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/Credits.txt
 Contributing : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/CONTRIBUTING.md
 Code of conduct : https://github.com/DiamondCoder1000/PlatinumOS/blob/main/CODE_OF_CONDUCT.md
-Templates : https://github.com/DiamondCoder1000/PlatinumOS/tree/main/.github/ISSUE_TEMPLATE
+Issue templates : https://github.com/DiamondCoder1000/PlatinumOS/tree/main/.github/ISSUE_TEMPLATE
