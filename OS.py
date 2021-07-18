@@ -24,6 +24,7 @@ def WikipediaSearch():
 def PlatinumOS():
   G = False
   H = True
+  apps = ["MicroText.app","Time.app","Browse.app","Calc.app", "APL.app", "SPL.app"]
   print('')
   print('Booting PlatinumOS', ver,'...')
   print('cpu speed:', cpu, 'MHz')
@@ -68,9 +69,9 @@ def PlatinumOS():
     x = input('>')
     if x == '?':
       print('''
-    Platinum Shell 1.8 (c) 2021
+    Platinum Shell 1.9 (c) 2021
     
-    Type "menu" to open the app menu.
+    Type the name of the apps to open the app.
     
     COMMANDS:
     version --- prints the OS version
@@ -79,7 +80,6 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
-    reboot --- reboots the system(WIP)
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -91,22 +91,8 @@ def PlatinumOS():
       print('going back to boot screen...')
       print('done')
       break
-    elif x == 'menu':
-      while True: 
-        app = input('''
-          APP MENU
-          -------------------------------------------------------
-          1: microText
-          2: Platinum Browser
-          3: Calculator
-          4: Arithmetic Programming Language(APL)
-          5: Simple Programming Language(SPL)
-          6: Timer
-          7: Exit    
-        ''')
-        if app == '7':
-          break
-        elif app == '1':
+    
+    elif x == 'MicroText.app':
           print('''
     
           ''' * 50)
@@ -116,7 +102,7 @@ def PlatinumOS():
             if y == 'sys.exit':
               print('thanks for using Micro Text\n see you next time!')
               break
-        elif app == '2':
+    elif x == 'Browse.app':
             print('''
             ''' * 50)
             print('welcome to Platinum Browser, a simple browser\n type "sys.exit" to exit this app \n (c)2021')
@@ -127,7 +113,7 @@ def PlatinumOS():
                 break
               else:
                 print('goto: https://google.com/search?q='+a)
-        elif app == '3':
+    elif x == 'Calc.app':
             print('''
       
             ''' * 50)
@@ -184,11 +170,11 @@ def PlatinumOS():
                   break
                 else:
                   print("Invalid Input")
-        elif app == '4':
+    elif x == 'APL.app':
           print('goto: https://colab.research.google.com/drive/14JMxZbH0reUuJBRCBCMjrntDvHkKN4US')
-        elif app == '5':
+    elif x == 'SPL.app':
           print('goto: https://colab.research.google.com/drive/1WD60jEsfEcyGL9zmS6EqTWhlnfeGW48Z')
-        elif app == '6':
+    elif x == 'Time.app':
           from time import sleep
           m = 0
           print("""**************************
@@ -222,12 +208,10 @@ def PlatinumOS():
               print(m," minutes and ",j," seconds")
               sleep(1)
           print("TIMER FINISHED")
-      else:
-        print('that\'s not a app')
     elif x == 'version':
       print(ver)
     elif x == 'sh version':
-      print('1.8')
+      print('1.9')
     elif x == 'cls':
       print('''
     
@@ -246,9 +230,9 @@ def PlatinumOS():
       print('GNU General Public License v3.0')
     elif x == 'open help' or x == 'open help.txt':
       print('''
-    Platinum Shell 1.8 (c) 2021
+    Platinum Shell 1.9 (c) 2021
     
-    Type "menu" to open the app menu.
+    Type the name of the apps to open the app.
     
     COMMANDS:
     version --- prints the OS version
@@ -260,7 +244,7 @@ def PlatinumOS():
     ''')
     
        
-     elif x == 'pip install Guessing_Game':
+    elif x == 'pip install Guessing_Game':
       print('getting packages...')
       print('000%')
       ti.sleep(1)
@@ -268,7 +252,7 @@ def PlatinumOS():
       ti.sleep(1)
       print('075%')
       ti.sleep(3)
-      print('100%: DONE: GUESSING_GAME IS INSTALLED. TYPE "open guessing game" TO OPEN.')
+      print('100%: DONE: GUESSING_GAME IS INSTALLED. TYPE "GuessingGame.app" TO OPEN.')
       G = True
 
     elif x == 'pip install Hangman':
@@ -279,15 +263,15 @@ def PlatinumOS():
       ti.sleep(1)
       print('075%')
       ti.sleep(3)
-      print('100%: DONE: HANMAN IS INSTALLED. TYPE "open hangman" TO OPEN.')
+      print('100%: DONE: HANMAN IS INSTALLED. TYPE "Hangman.app" TO OPEN.')
       H = True
-    elif x == 'hangman':
+    elif x == 'Hangman.app':
       if H == True:
         hangman_hangman()
       else: 
         print('ERROR<hangman is not installed>')
     
-    elif x == 'guessing game':
+    elif x == 'GuessingGame.app':
       if G == True:
         guessing_game()
       else:
@@ -299,6 +283,9 @@ def PlatinumOS():
       Diamondcoder1000
       May 26, 2021
       """)
+    elif x == 'apps':
+      for i in apps:
+        print(i)
     else:
       print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
