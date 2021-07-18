@@ -32,8 +32,6 @@ def PlatinumOS():
   time.sleep(cpu/20)
   print('jumping to kernel...')
   time.sleep(cpu/40)
-  print('executing login sequence...')
-  time.sleep(cpu/20)
   print('Platinum login:\n')
   # login sequence {
   class Login:
