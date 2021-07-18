@@ -3,7 +3,7 @@ ver = '2.1.1'
 cpu = 40
 import time
 import math
-print('PlatinumBIOS (c) June 2021')
+print('PlatinumBIOS (c) July 2021')
 print('executing BIOS sequence...')
 time.sleep(2)
 print('locating bootloader...')
@@ -16,7 +16,6 @@ def WikipediaSearch():
   while True:
     y = input('')
     if y == "exit":
-      print('Bye!')
       print('going back to boot menu')
       break
     else:
@@ -100,7 +99,7 @@ def PlatinumOS():
           while True:
             y = input()
             if y == 'sys.exit':
-              print('thanks for using Micro Text\n see you next time!')
+              print('thanks for using Micro Text.')
               break
     elif x == 'Browse.app':
             print('''
