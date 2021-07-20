@@ -1,8 +1,10 @@
 #start of the os :)
-ver = '2.1.3'
+ver = '3.0.0'
 cpu = 40
 import time
 import math
+print("SimpleVM Box")
+time.sleep(3)
 print('PlatinumBIOS (c) July 2021')
 time.sleep(2)
 print('locating bootloader...')
@@ -22,15 +24,11 @@ def WikipediaSearch():
 def PlatinumOS():
   G = False
   H = True
-  apps = ["MicroText.app","Time.app","Browse.app","Calc.app", "APL.app", "SPL.app"]
+  apps = ["MicroText.app","Time.app","Browse.app","Calc.app", "APL.app", "SPL.app", "Calender.app"]
   print('')
   print('Booting PlatinumOS', ver,'...')
+  print("CPU: SimpleVM Box")
   print('cpu speed:', cpu, 'MHz')
-  print('locating kernel...')
-  print('')
-  print('')
-  time.sleep(cpu/20)
-  print('jumping to kernel...')
   time.sleep(cpu/40)
   print('Platinum login:\n')
   # login sequence {
@@ -59,7 +57,7 @@ def PlatinumOS():
   print('Welcome to PlatinumOS', ver)
   print('Exiting...')
   time.sleep(2)
-  print('Platinum shell 1.7')
+  print('Platinum shell 1.9')
   print('type "?" for help')
   while True:
     x = input('>')
@@ -222,7 +220,13 @@ def PlatinumOS():
       ''')
     elif x == 'open credits' or x == 'open credits.txt':
       print('''
-      DiamondCoder1000 - creator and tester
+      DiamondCoder1000 - creator
+      GDOS creator... I forgot his/her name. sorry - inspiration for boot screen
+      DiamondCoder1000 - tester
+      Linus Torvalds - inspiration for most commands
+      Bill Gates and Paul Allen - For getting me into computer science and coding :)
+      My python teacher - I wouldn't even be doing this lol
+      Github creator - I wouldn't be here without him/her
       ''')
     elif x == 'open license' or x == 'open license.txt':
       print('GNU General Public License v3.0')
@@ -287,10 +291,22 @@ def PlatinumOS():
     elif x == 'apps':
       for i in apps:
         print(i)
+    elif x == 'Calender.app':
+      import calendar 
+
+      print("Your Calender\n \n ")
+
+      y = int(input("Enter the Year : "))
+      m = int(input("Enter the month : "))
+      try:
+          mycalender = calendar.month(y , m)
+          print("\n", mycalender)
+      except IndexError:
+          print("Its out of range")
     else:
-      print('that is not a command added to the Platinum Shell 1.9\nUpdates will come soon\n')
+      print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
 while True:
-  print('There are 3 operating systems installed. Which one do you want to run? Type the number.')
+  print('There are 3 operating systems installed to your SimpleVM Box. Which one do you want to run? Type the number.')
   print('''
   1. Wikipedia search
   2. PlatinumOS
