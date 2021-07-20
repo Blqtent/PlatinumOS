@@ -1,7 +1,7 @@
 # PlatinumOS
 A OS in python(trust me it's better than PyOS)
 # Info
-current version: v2.1.3
+current version: v3.0.0
 
 current pre release: NaN
 
