@@ -288,7 +288,7 @@ def PlatinumOS():
       for i in apps:
         print(i)
     else:
-      print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
+      print('that is not a command added to the Platinum Shell 1.9\nUpdates will come soon\n')
 while True:
   print('There are 3 operating systems installed. Which one do you want to run? Type the number.')
   print('''
