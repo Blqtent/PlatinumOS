@@ -304,7 +304,7 @@ def PlatinumOS():
       except IndexError:
           print("Its out of range")
     else:
-      print('that is not a command added to the Platinum Shell 1.8\nUpdates will come soon\n')
+      print('that is not a command added to the Platinum Shell 1.9\nUpdates will come soon\n')
 while True:
   print('There are 3 operating systems installed to your SimpleVM Box. Which one do you want to run? Type the number.')
   print('''
