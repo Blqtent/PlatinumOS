@@ -164,7 +164,7 @@ import time
 import math
 print("SimpleVM Box")
 time.sleep(3)
-print('PlatinumBIOS (c) July 2021')
+print('SimpleBIOS (c) July 2021')
 time.sleep(2)
 print('locating bootloader...')
 time.sleep(3)
