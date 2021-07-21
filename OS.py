@@ -1,3 +1,162 @@
+#some game functions
+def hangman_hangman():
+  import random
+  import time
+
+  # Initial Steps to invite in the game:
+  print("\nWelcome to Hangman game by DataFlair\n")
+  name = input("Enter your name: ")
+  print("Hello " + name + "! Best of Luck!")
+  time.sleep(2)
+  print("The game is about to start!\n Let's play Hangman!")
+  time.sleep(3)
+  def main():
+    global count
+    global display
+    global word
+    global already_guessed
+    global length
+    global play_game
+    words_to_guess = ["january","border","image","film","promise","kids","lungs","doll","rhyme","damage","plants"]
+    word = random.choice(words_to_guess)
+    length = len(word)
+    count = 0
+    display = '_' * length
+    already_guessed = []
+    play_game = ""
+    # A loop to re-execute the game when the first round ends:
+
+  def play_loop():
+    global play_game
+    play_game = input("Do You want to play again? y = yes, n = no \n")
+    while play_game not in ["y", "n","Y","N"]:
+        play_game = input("Do You want to play again? y = yes, n = no \n")
+    if play_game == "y":
+        main()
+    elif play_game == "n":
+        print("Thanks For Playing! We expect you back again!")
+        exit()
+  # Initializing all the conditions required for the game:
+  def hangman():
+    global count
+    global display
+    global word
+    global already_guessed
+    global play_game
+    limit = 5
+    guess = input("This is the Hangman Word: " + display + " Enter your guess: \n")
+    guess = guess.strip()
+    if len(guess.strip()) == 0 or len(guess.strip()) >= 2 or guess <= "9":
+        print("Invalid Input, Try a letter\n")
+        hangman()
+    elif guess in word:
+        already_guessed.extend([guess])
+        index = word.find(guess)
+        word = word[:index] + "_" + word[index + 1:]
+        display = display[:index] + guess + display[index + 1:]
+        print(display + "\n")
+
+    elif guess in already_guessed:
+        print("Try another letter.\n")
+
+    else:
+        count += 1
+
+        if count == 1:
+            time.sleep(1)
+            print("   _____ \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+
+        elif count == 2:
+            time.sleep(1)
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+
+        elif count == 3:
+           time.sleep(1)
+           print("   _____ \n"
+                 "  |     | \n"
+                 "  |     |\n"
+                 "  |     | \n"
+                 "  |      \n"
+                 "  |      \n"
+                 "  |      \n"
+                 "__|__\n")
+           print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+
+        elif count == 4:
+            time.sleep(1)
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |     | \n"
+                  "  |     O \n"
+                  "  |      \n"
+                  "  |      \n"
+                  "__|__\n")
+            print("Wrong guess. " + str(limit - count) + " last guess remaining\n")
+
+        elif count == 5:
+            time.sleep(1)
+            print("   _____ \n"
+                  "  |     | \n"
+                  "  |     |\n"
+                  "  |     | \n"
+                  "  |     O \n"
+                  "  |    /|\ \n"
+                  "  |    / \ \n"
+                  "__|__\n")
+            print("Wrong guess. You are hanged!!!\n")
+            print("The word was:",already_guessed,word)
+            play_loop()
+
+    if word == '_' * length:
+        print("Congrats! You have guessed the word correctly!")
+        play_loop()
+
+    elif count != limit:
+        hangman()
+
+
+  main()
+
+  hangman()
+
+def guessing_game():
+  import random
+  number = random.randint(0,100)
+  tries = 1
+  done = False
+  print("this is the number guessing game. enter a guess and see if you're right!")
+  while True:
+    guess = int(input("enter a guess"))
+    if guess == number:
+      done == True
+      print("you won!")
+      break
+    else:
+      tries += 1
+      if guess > number:
+        print("too large")
+      else: 
+        print("too small")
+      if done == True:
+        break
+  print(f"you needed {tries} tries!")
 #start of the os :)
 ver = '3.0.1'
 cpu = 40
@@ -63,7 +222,7 @@ def PlatinumOS():
     x = input('>')
     if x == '?':
       print('''
-    Platinum Shell 1.9 (c) 2021
+    Platinum Shell 2.0 (c) 2021
     
     Type the name of the app to open the app.
     
@@ -76,6 +235,8 @@ def PlatinumOS():
     open --- opens files
     apps --- lists all the apps
     about --- info about the OS
+    pip install --- install an app
+    pip --- list the apps available for download
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -225,7 +386,7 @@ def PlatinumOS():
     elif x == 'open help' or x == 'open help.txt':
       print('''
     
-    Platinum Shell 1.9 (c) 2021
+    Platinum Shell 2.0 (c) 2021
     
     Type the name of the app to open the app.
     
@@ -236,12 +397,14 @@ def PlatinumOS():
     exit --- exits OS
     ls --- lists directories
     open --- opens files
-    apps --- list all the apps
+    apps --- lists all the apps
     about --- info about the OS
+    pip install --- install an app
+    pip --- list the apps available for download
     ''')
     
        
-    elif x == 'pip install Guessing_Game':
+    elif x == 'pip install GuessingGame':
       print('getting packages...')
       print('000%')
       ti.sleep(1)
@@ -283,6 +446,10 @@ def PlatinumOS():
     elif x == 'apps':
       for i in apps:
         print(i)
+      if H == True:
+        print("Hangman.app")
+      elif G == True:
+        print("GuessingGame.app")
     elif x == 'Calender.app':
       import calendar 
 
@@ -295,6 +462,13 @@ def PlatinumOS():
           print("\n", mycalender)
       except IndexError:
           print("Its out of range")
+    elif x == "pip":
+      print("""
+      DOWNLOADABLE APPS
+      =================
+      Hangman
+      GuessingGame
+      """)
     else:
       print('that is not a command added to the Platinum Shell 1.9\nUpdates will come soon\n')
 while True:
