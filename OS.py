@@ -89,9 +89,6 @@ def PlatinumOS():
       break
     
     elif x == 'MicroText.app':
-          print('''
-    
-          ''' * 50)
           print('welcome to Micro Text, a simple text editor \n type "sys.exit" to exit this app \n (c)2021')
           while True:
             y = input()
@@ -99,8 +96,6 @@ def PlatinumOS():
               print('thanks for using Micro Text.')
               break
     elif x == 'Browse.app':
-            print('''
-            ''' * 50)
             print('welcome to Platinum Browser, a simple browser\n type "sys.exit" to exit this app \n (c)2021')
             while True:
               a = input('search:')
@@ -110,9 +105,6 @@ def PlatinumOS():
               else:
                 print('goto: https://google.com/search?q='+a)
     elif x == 'Calc.app':
-            print('''
-      
-            ''' * 50)
             print('welcome to Calculator, a simple calculator\n type "sys.exit" to exit this app \n (c)2021')
             # Program make a simple calculator
 
