@@ -158,7 +158,7 @@ def guessing_game():
         break
   print(f"you needed {tries} tries!")
 #start of the os :)
-ver = '3.0.1'
+ver = '3.1.0'
 cpu = 40
 import time
 import math
