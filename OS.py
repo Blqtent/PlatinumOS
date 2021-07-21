@@ -158,7 +158,7 @@ def guessing_game():
         break
   print(f"you needed {tries} tries!")
 #start of the os :)
-ver = '3.1.0'
+ver = '3.1.1'
 cpu = 40
 import time
 import math
@@ -439,7 +439,7 @@ def PlatinumOS():
         print('ERROR<guessing game is not installed>')
     elif x == 'about':
       print("""
-      version: 3.1.0
+      version: 3.1.1
       (c) 2021 all rights reserved
       Diamondcoder1000
       July 21, 2021
