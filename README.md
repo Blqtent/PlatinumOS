@@ -13,5 +13,5 @@ goto https://github.com/DiamondCoder1000/PlatinumOS/wiki for help with installat
 Anyway, go check it out!
 
 # requierments
-you need python3 with the "time" and "math"
+you need python3 with the "time", "math", and "calender"
 
