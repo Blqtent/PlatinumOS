@@ -438,10 +438,10 @@ def PlatinumOS():
         print('ERROR<guessing game is not installed>')
     elif x == 'about':
       print("""
-      version: 3.0.1
+      version: 3.1.0
       (c) 2021 all rights reserved
       Diamondcoder1000
-      July 17, 2021
+      July 21, 2021
       """)
     elif x == 'apps':
       for i in apps:
