@@ -237,6 +237,7 @@ def PlatinumOS():
     about --- info about the OS
     pip install --- install an app
     pip --- list the apps available for download
+    cls --- clear screen
       ''')
     elif x == 'exit':
       print('shutting down Shell...')
@@ -385,7 +386,6 @@ def PlatinumOS():
       print('GNU General Public License v3.0')
     elif x == 'open help' or x == 'open help.txt':
       print('''
-    
     Platinum Shell 2.0 (c) 2021
     
     Type the name of the app to open the app.
@@ -401,6 +401,7 @@ def PlatinumOS():
     about --- info about the OS
     pip install --- install an app
     pip --- list the apps available for download
+    cls --- clear screen
     ''')
     
        
