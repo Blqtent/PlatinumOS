@@ -216,7 +216,7 @@ def PlatinumOS():
   print('Welcome to PlatinumOS', ver)
   print('Exiting...')
   time.sleep(2)
-  print('Platinum shell 1.9')
+  print('Platinum shell 2.0')
   print('type "?" for help')
   while True:
     x = input('>')
